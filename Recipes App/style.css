@@ -1,0 +1,187 @@
+:root {
+  --color_1: red;
+  --color_2: green;
+  --color_3: #1f2633;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Poppins:wght@200&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  height: 100vh;
+  background-color: #dcdde1;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* text selection none */
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+.inside-meal-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* border: 1px solid var(--color_1); */
+}
+.inside-container {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid var(--color_2); */
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+#heading {
+  /* border: 1px solid var(--color_3); */
+  padding: 0.3rem;
+  /* margin: 2px; */
+}
+#heading #search {
+  border: none;
+  background-color: #f1f2f6;
+  padding: 0.5rem;
+  box-shadow: 0 0 2px 1px #1e90ff inset;
+  border-radius: 2px;
+}
+#heading #search:focus {
+  outline: none;
+}
+
+#heading .btn {
+  padding: 0.38rem;
+  width: 2rem;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+#heading .btn .fas {
+  color: #1d7ad8;
+  font-size: 1.1rem;
+}
+#favorite-meals {
+  /* border: 1px solid tomato; */
+  width: 100%;
+  margin: 2px;
+  padding: 0.7rem;
+  position: relative;
+  background-color: #78a1ee;
+}
+#favorite-meals #fav-meals-heading {
+  font-size: 1rem;
+  text-align: center;
+  /* border: 1px solid yellowgreen; */
+  margin-top: -0.5rem;
+  padding: 2px;
+  color: var(--color_3);
+}
+#fav-items {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* border: 1px solid rebeccapurple; */
+  /* padding: 5px; */
+  margin-top: -5px;
+}
+.list-of-fav {
+  /* border: 1px solid black; */
+  text-align: center;
+  width: 70px;
+  overflow: hidden;
+  margin: 2px;
+  position: relative;
+}
+img {
+  width: 50px;
+  height: 50px;
+}
+/* .list-of-fav .img-name {
+  border: 1px solid red;
+  height: 60px;
+  width: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.list-of-fav .img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: white;
+  margin-top: 2px;
+  cursor: pointer;
+}
+.list-of-fav .meal-name {
+  /* border: 1px solid red; */
+  padding: 2px;
+  font-size: 0.5rem;
+  display: flex;
+  justify-content: center;
+  margin-top: -0.1rem;
+}
+#meals {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  /* border: 1px solid purple; */
+  border-radius: 5px;
+  box-shadow: 0 0 2px 1px rgb(218, 207, 207);
+  margin-bottom: 10px;
+}
+.main-view {
+  width: 100%;
+}
+.main-view .random {
+  /* border: 1px solid green; */
+  position: absolute;
+  transform: translate(0px, 10px);
+  font-size: 12px;
+  padding: 2px 4px;
+  background-color: whitesmoke;
+}
+.main-view .image {
+  width: 100%;
+  height: 170px;
+  text-align: center;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  padding: 3px;
+  margin-bottom: 8px;
+}
+.footer .meal-name {
+  /* border: 1px solid green; */
+  font-size: 15px;
+  margin: 0 10px;
+  font-weight: bold;
+  color: var(--color_3);
+}
+.footer .favorite {
+  border: none;
+  cursor: pointer;
+  color: #798fa5;
+  background-color: transparent;
+}
+.active {
+  color: rebeccapurple;
+}

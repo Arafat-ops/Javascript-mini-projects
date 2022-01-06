@@ -1,0 +1,74 @@
+body {
+  box-sizing: border-box;
+  background-color: #1f2633;
+  color: #f5f5f5;
+  display: flex;
+  margin: 0%;
+  padding: 0%;
+  min-height: 100vh;
+  background-image: url("./Beautiful.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  /* color: #1f1f1f; */
+  color: whitesmoke;
+}
+.main {
+  box-shadow: 1px 1px 3px 1px #bdbadb inset;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+.main .input {
+  display: flex;
+  flex-direction: column;
+}
+.main .input .time {
+  margin: 10px;
+  text-align: center;
+}
+.main .input b {
+  padding: 5px;
+  margin: 5px;
+}
+.main .input input[type="text"],
+input[type="submit"] {
+  border: 1px solid #1f2633;
+  width: 80%;
+  background-color: #f8f8ff;
+  border-radius: 3px;
+  margin: auto;
+}
+input[type="submit"] {
+  width: 70px;
+  padding: 5px;
+  margin-top: 10px;
+  background-color: #bdbadb;
+  border-radius: 5px;
+}
+
+.main .input input[type="text"]:focus {
+  width: 85%;
+  border: 2px solid #1f2633;
+  outline: 2px solid #1f2633;
+}
+.for_time {
+  margin: auto;
+  width: 150px;
+  height: 70px;
+  box-shadow: 2px 2px 2px 2px #635ae0 inset, -1px -1px 2px 2px #635ae0 inset;
+  text-align: center;
+  display: flex;
+  margin-top: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.for_time p {
+  width: 160px;
+  padding: 10px;
+  width: 100px;
+  margin: auto;
+  box-shadow: 1px 1px 2px 2px rgb(94, 92, 92) inset;
+  border-radius: 10px;
+}
